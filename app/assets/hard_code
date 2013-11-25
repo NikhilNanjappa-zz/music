@@ -1,0 +1,72 @@
+$scope.tiles =  [
+                      { title:"Metrics1 (less than 2 weeks)",value:"78",unit:"M$",size:"medium",state:"equal", icon:""},
+                      { title:"Metrics2",value:"26",unit:"M$",size:"big",state:"below"},
+                      { title:"Metrics3",value:"22",unit:"M$",size:"small",state:"above"},
+                      { title:"Metrics4",value:"45",unit:"%",size:"small",state:"below"},
+                      { title:"Metrics5",value:"46",unit:"M$",size:"medium",state:"equal"},
+                      { title:"Metrics6",value:"44",unit:"%",size:"medium",state:"equal"},
+                      { title:"Metrics7",value:"66",unit:"%",size:"medium",state:"equal"},
+                      { title:"Metrics8",value:"76",unit:"%",size:"medium",state:"below"},
+                      { title:"Metrics9",value:"68",unit:"%",size:"small",state:"above"},
+                      { title:"Metrics10",value:"97",unit:"%",size:"small",state:"equal"},
+                      { title:"Metrics11",value:"63",unit:"%",size:"medium",state:"equal"},
+                      { title:"Metrics12",value:"33",unit:"%",size:"small",state:"above"},
+                      { title:"Metrics13",value:"23",unit:"%",size:"small",state:"equal"},
+                      { title:"Metrics14",value:"65",unit:"%",size:"medium",state:"above"},
+                      { title:"Metrics15",value:"79",unit:"%",size:"big",state:"equal"},
+                      { title:"Metrics16",value:"7",unit:"%",size:"small",state:"below"},
+                      { title:"Metrics17",value:"8",unit:"%",size:"small",state:"equal"},
+                      { title:"Metrics18",value:"40.5",unit:"%",size:"medium",state:"equal"},
+                      { title:"Metrics19",value:"45.09",unit:"%",size:"medium",state:"above"},
+                      { title:"Metrics20",value:"34",unit:"%",size:"small",state:"above"},
+                      { title:"Metrics21",value:"67",unit:"%",size:"small",state:"equal"},
+                      { title:"Metrics22",value:"52",unit:"%",size:"medium",state:"below"},
+                      { title:"Metrics23",value:"72",unit:"%",size:"small",state:"equal"},
+                      { title:"Metrics24",value:"26",unit:"%",size:"small",state:"above"},
+                      { title:"Metrics25",value:"74",unit:"%",size:"medium",state:"below"},
+                      { title:"Metrics26",value:"22",unit:"%",size:"medium",state:"equal"},
+                      { title:"Metrics27",value:"16",unit:"%",size:"big",state:"equal"}
+                    ]
+
+$scope.graphData = {
+         topPanelData: [{
+                name: 'Gross Profit',
+                value: '116.35',
+                unit: 'M$',
+                data: [3, 2, 1, 3, 4, 9]
+            }, {
+                name: 'Service Revenue',
+                value: '82.25',
+                unit: 'M$',
+                data: [2, 3, 5, 7, 6]
+            }, {
+                name: 'Sales Revenue',
+                value: '35.51',
+                unit: 'M$',
+                data: [4, 3, 3, 9, 0]
+            }],
+            pieChartData:{
+                name: 'BU Contribution',
+                value: '27.66',
+                unit: 'M$',
+                data: [4, 3, 3, 9, 0]
+            }
+    };
+
+    <script type="text/javascript">
+  $(function () {
+  new Highcharts.Chart({
+    chart: { renderTo: 'orders_chart' },
+    title: { text: 'Orders by Day' },
+    xAxis: { type: 'datetime' },
+    yAxis: {
+      title: { text: 'Dollars'}
+    },
+    series: [{
+      data: [1, 2, 5, 7, 3]
+    }]
+  });
+});
+  
+</script>
+

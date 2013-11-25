@@ -1,0 +1,22 @@
+
+<center><h2>List of songs</h2></center>
+<%= link_to "Upload New Songs", new_song_path %><br/><br/>
+
+<div id="accordion">
+<% @songs.each do |song| %>
+<h3><%= song.title %></h3>
+<center><div>
+	 <strong>Name:</strong> <%= song.song_file_name %><br/>
+     <strong>Description:</strong> <%= song.description %><br/>
+     <strong>Size:</strong> <%= song.song_file_size %>bytes<br/>
+     <strong>Duration:</strong> <%= song.duration %>min<br/>
+     <%= song.genre.present? ? song.genre.name : 'N/A' %><br/>
+     <%= link_to "Download", download_song_path(song) %>
+</div></center>
+<% end %>
+
+</div>
+<center><%= will_paginate @songs %></center>
+
+
+
