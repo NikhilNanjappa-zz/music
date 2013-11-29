@@ -80,7 +80,6 @@ GEM
     nifty-generators (0.4.6)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
-    oj (2.2.3)
     polyglot (0.3.3)
     pr_geohash (1.0.0)
     progressbar (0.21.0)
@@ -162,7 +161,6 @@ DEPENDENCIES
   jquery-turbolinks (~> 0.2.1)
   mocha
   nifty-generators
-  oj
   paperclip!
   progressbar (~> 0.21.0)
   protected_attributes

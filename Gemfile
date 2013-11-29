@@ -11,7 +11,7 @@ gem "protected_attributes"
 
 gem 'rabl'
 # Also add either `oj` or `yajl-ruby` as the JSON parser
-gem 'oj'
+# gem 'oj'
 
 gem "haml", "~> 4.0.4"
 
