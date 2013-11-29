@@ -1734,9 +1734,9 @@ select:focus:invalid:focus {
 .input-append .btn-group > .dropdown-toggle,
 .input-prepend .btn-group > .dropdown-toggle {
   vertical-align: top;
-  -webkit-border-radius: 0;
-     -moz-border-radius: 0;
-          border-radius: 0;
+  -webkit-border-radius: 5;
+     -moz-border-radius: 5;
+          border-radius: 5;
 }
 
 .input-append .active,
@@ -3960,7 +3960,6 @@ input[type="submit"].btn.btn-mini {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
 }
 
 .nav > li > a > img {
@@ -4573,7 +4572,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
   width: 940px;
-  background-color: #2BBBD8;
+  background-color: #545454;
 }
 
 .navbar-fixed-top {
@@ -4600,7 +4599,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav {
   position: relative;
   left: 0;
-  background-color: #2BBBD8;
+  background-color: #545454;
   display: block;
   float: left;
   margin: 0 10px 0 0;

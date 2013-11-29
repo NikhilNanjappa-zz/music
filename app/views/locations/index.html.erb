@@ -4,7 +4,8 @@
     <%= text_field_tag :search, params[:search] %>
     <%= submit_tag "Search Near", :name => nil %>
 <% end %>
-
+<center>
+<div class="mid">
 <table>
   <tr>
     <th>Address</th>
@@ -22,5 +23,6 @@
     </tr>
   <% end %>
 </table>
-
+</div>
+</center>
 <p><%= link_to "New Location", new_location_path %></p>
