@@ -1,0 +1,33 @@
+=form_for :song,  url: songs_path do |f|
+ %br
+ %center
+  %table.details
+   %tr
+    %td
+     =f.label :title
+    %td.right
+     =f.text_field :title
+   %tr
+    %td
+     =f.label :description
+    %td.right
+     =f.text_area :description
+   %tr
+    %td
+     =f.label :duration
+    %td.right
+     =f.text_field :duration
+     mins
+   %tr
+    %td
+     =f.label :genre
+    %td.right
+     =f.collection_select :genre_id, Genre.all, :id, :name, multiple: true, :prompt => "Please Select a Genre"
+   %tr
+    %td
+     =f.label :song, "Upload File"
+    %td.right
+     =f.file_field :song
+   %tr
+    %td.upload_btn
+     =f.submit "Upload"

@@ -1,0 +1,26 @@
+%center
+ %h2 List of Songs
+=link_to "Upload New Songs", new_song_path
+-@songs.each do |song|
+ %center
+  %h4{ :style => "text-decoration: underline;" }
+   =song.title
+  %strong Name: 
+  =song.song_file_name
+  %br
+  %strong Description:
+  =song.description
+  %br
+  %strong Size:
+  =song.song_file_size
+  %br
+  %strong Duration:
+  =song.duration
+  %br
+  %strong Genre:
+  =song.genre.present? ? song.genre.name : 'N/A'
+  %br
+  =link_to "Download", download_song_path(song)
+  %hr
+%center
+ =will_paginate @songs

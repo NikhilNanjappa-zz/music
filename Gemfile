@@ -3,6 +3,18 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
+gem 'nifty-generators'
+
+gem 'geocoder'
+
+gem "protected_attributes"
+
+gem 'rabl'
+# Also add either `oj` or `yajl-ruby` as the JSON parser
+gem 'oj'
+
+gem "haml", "~> 4.0.4"
+
 gem "progressbar", "~> 0.21.0"
 #gem "paperclip", "~> 3.0"
 gem "paperclip", :git => "http://github.com/thoughtbot/paperclip.git"
@@ -17,7 +29,7 @@ gem 'sunspot_rails'
 
 gem "jquery-turbolinks", "~> 0.2.1"
 
-gem 'bootstrap-sass', '~> 2.3.2.2'
+# gem 'bootstrap-sass', '~> 2.3.2.2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -55,3 +67,5 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem "mocha", group: :test

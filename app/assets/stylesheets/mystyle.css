@@ -1,0 +1,11 @@
+.my-navbar {
+  background: #2BBBD8;
+}
+
+.my-nav .active {
+	background-color: red;
+}
+
+.my-nav ul li {
+	background-color: red !important;
+}

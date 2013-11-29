@@ -1,0 +1,15 @@
+%center
+ %h2 Add a new Genre
+ %hr
+=form_for :genre,  url: genres_path do |f|
+ %center
+  %table
+   %tr
+    %td{ :style => "text-align: center;" }
+     =f.label :name
+   %tr
+    %td
+     =f.text_field :name
+   %tr
+    %td{ :style => "text-align: center;" } 
+     =f.submit "Submit"

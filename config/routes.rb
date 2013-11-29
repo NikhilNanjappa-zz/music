@@ -18,6 +18,8 @@ Music::Application.routes.draw do
   end
   
   resources :genres
+
+  resources :locations
   # You can have the root of your site routed with "root"
   root 'songs#index'
 

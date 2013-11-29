@@ -13,7 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
 //= require jquery.turbolinks
 //= require jquery-ui
 //= require jquery-1.9.1
@@ -23,3 +22,5 @@
 //= require modules/funnel
 //= require highchart-clock
 //= require highcharts/highcharts-more
+//= require underscore
+//= require_tree .
