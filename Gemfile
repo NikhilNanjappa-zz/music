@@ -11,15 +11,19 @@ gem "protected_attributes"
 
 gem 'rabl'
 # Also add either `oj` or `yajl-ruby` as the JSON parser
-gem 'oj'
+# gem 'oj'
 
 gem "haml", "~> 4.0.4"
 
 gem "progressbar", "~> 0.21.0"
 #gem "paperclip", "~> 3.0"
-gem "paperclip", :git => "http://github.com/thoughtbot/paperclip.git"
+gem "paperclip"
+
+#, :git => "http://github.com/thoughtbot/paperclip.git"
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'mysql2'
+
+gem 'pg'
 
 gem "will_paginate", "~> 3.0.5"
 
@@ -29,6 +33,7 @@ gem 'sunspot_rails'
 
 gem "jquery-turbolinks", "~> 0.2.1"
 
+gem 'rails_12factor'
 # gem 'bootstrap-sass', '~> 2.3.2.2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

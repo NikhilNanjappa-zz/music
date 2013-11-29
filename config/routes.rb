@@ -21,7 +21,7 @@ Music::Application.routes.draw do
 
   resources :locations
   # You can have the root of your site routed with "root"
-  root 'songs#index'
+  root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
